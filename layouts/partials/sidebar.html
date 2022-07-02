@@ -1,0 +1,30 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <figure>
+     <p>{{ if .Site.Params.description }}{{ .Site.Params.description }}{{ else }} <a href="/" target="_blank"><img src="/assets/sd_white.png" alt="sourabhdeshmukh" style="vertical-align:middle" /></a>{{ end }}</p>
+    <figcaption><b>sourabhdeshmukh.in</b></figcaption>
+    </figure>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item {{ if .IsHome }} active {{ end }}" href="/">Home</a>
+    <a class="sidebar-nav-item {{ if eq .RelPermalink "/post/" }} active {{ end }}" href="/post">Posts</a>
+    <a class="sidebar-nav-item {{ if eq .RelPermalink "/tags/" }} active {{ end }}" href="/tags">Tags</a>
+    <a class="sidebar-nav-item {{ if eq .RelPermalink "/categories/" }} active {{ end }}" href="/categories">Categories</a>
+  </nav>
+
+  <div>
+        <a href="https://www.twitter.com/100rabhdeshmukh" target="_blank" class="sidebar-social-icon"><img src="/social/Twitter.png" alt="Twitter" width="30px" height="30px"/></a>  
+    	<a href="https://www.linkedin.com/in/sourabh-deshmukh" target="_blank" class="sidebar-social-icon"><img src="/social/LinkedIn.png" alt="LinkedIn" width="30px" height="30px"/></a> 
+    	<a href="https://www.github.com/sourabhdeshmukh" target="_blank" class="sidebar-social-icon"><img src="/social/Github.png" alt="Github" width="30px" height="30px" /></a> 
+    	<a href="mailto:mail@sourabhdeshmukh.in" target="_blank" class="sidebar-social-icon"><img src="/social/Mail.png" alt="Mail" width="30px" height="30px"/></a>    
+  </div>
+  <div class="sidebar-item">
+    <p>&copy; {{ now.Format "2006" }}. All rights reserved.</p>
+  </div>
+</div>

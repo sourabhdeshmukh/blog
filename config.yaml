@@ -1,0 +1,36 @@
+---
+contentdir: content
+layoutdir: layouts
+publishdir: public
+builddrafts: false
+baseurl: https://sourabhdeshmukh.in/
+canonifyurls: true
+permalinks:
+  post: ":year/:month/:day/:title/"
+  fixed: ":title/"
+markup:
+  goldmark:
+    extensions:
+      typographer: true
+    renderer:
+      unsafe: true
+Paginate: 5
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
+taxonomies:
+  category: categories
+  tag: tags
+params:
+  Title: SourabhDeshmukh
+  Tagline: Cloud of information
+  Author: Sourabh Deshmukh
+  DateForm: Jan 2, 2006
+  copyrightYear: '2018'
+  mainSections:
+  - post
+  disqusShortname: sourabhdeshmukh
+  Github:
+    Url: http://github.com/sourabhdeshmukh/site
+    Head: main
