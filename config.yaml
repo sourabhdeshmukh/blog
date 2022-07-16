@@ -3,7 +3,7 @@ contentdir: content
 layoutdir: layouts
 publishdir: public
 builddrafts: false
-baseurl: https://sourabhdeshmukh.in/
+baseurl: https://blog.sourabhdeshmukh.in/
 canonifyurls: true
 permalinks:
   post: ":year/:month/:day/:title/"
@@ -32,5 +32,5 @@ params:
   - post
   disqusShortname: sourabhdeshmukh
   Github:
-    Url: http://github.com/sourabhdeshmukh/site
+    Url: http://github.com/sourabhdeshmukh/
     Head: main
